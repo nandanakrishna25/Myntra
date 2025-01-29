@@ -1,0 +1,135 @@
+#mybag{
+   color: black;
+   width:200px;
+}
+
+#mybag::after{
+    content:"bag---confirm---pay";
+    background-color: white;
+    color:rgb(89, 89, 89);
+    padding:3px;
+    font-size: 20px;
+    position: absolute;
+    top:5%;
+    left:50%;            /*negative values can also be used*/
+}
+
+#word{
+    text-decoration: line-through;
+    /* display: block; */
+}
+       
+.item{
+    background-color:white;
+    border:rgb(226, 209, 191) solid 1px;
+    padding: 10px;
+    width:301px;
+    height: 150px;
+    margin:8px;
+}
+
+#handbag{
+    height:150px;
+    width:150px;
+    float: left;
+}
+
+#items{
+    /* display:flex; */
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid rgba(8, 8, 8, 0.425);
+    padding: 10px;
+    justify-items: center;
+}
+
+.para{
+    margin-left: 165px;
+}
+
+.button{
+    color: rgb(255, 255, 255);
+    background-color:rgb(219, 165, 165);
+    border:rgb(213, 143, 143) solid;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: flex;
+    font-size: 12px;
+  }
+  
+.button:hover{
+    cursor: pointer;
+  }
+
+.buttonh{
+    color: rgb(255, 255, 255);
+    background-color:rgb(219, 165, 165);
+    border:rgb(213, 143, 143) solid;
+    border-radius: 7px;
+    margin-top: 15px;
+    display: flex;
+    font-size: 12px;
+}
+
+.buttonh:hover{
+    cursor: pointer;
+}
+
+#summary{
+    border:solid black 1px;
+    justify-items: center;
+    width: fit-content;
+    height: fit-content;
+    /* margin-left: 20px; */
+    /* align-self: end;
+    justify-self: end; */
+}
+
+#element{
+    color: rgb(237, 131, 149);
+}
+
+#content{
+    margin: auto;
+    width: fit-content;
+    /* display: flex;
+    flex direction:column;
+    gap: 10px; */
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    /* gap: 20px; */
+    row-gap: 10px;
+    column-gap: 15px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+#line1{
+    border:1px solid rgb(255, 255, 255);
+    margin: 0px;
+}
+
+#line2{
+    background-color: black;
+    width:230px;
+    justify-content: center;
+    margin: 0;
+    margin-top:10px;
+    border:1px solid black ;
+}
+
+#gift{
+    border:solid black 1px;
+    /* margin-left: 20px; */
+    justify-items: center;
+    width: fit-content;
+    height: fit-content;
+    grid-column: -2/-1;      /* POSITION OF CELL */
+}
+
+pre{
+    margin: 0px;
+    height: fit-content;
+    padding: 10px;
+}
