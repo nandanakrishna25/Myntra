@@ -70,13 +70,6 @@ nav:hover{
     right:2px;            /*negative values can also be used*/
 }
 
-#h1::after:hover{
-    background-color: rgb(244, 229, 152);
-    color:white;
-    border:solid 2px rgb(244, 229, 152);
-}
-
-
 #item1{
     float:left;
     background-color:white;
