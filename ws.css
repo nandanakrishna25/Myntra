@@ -4,7 +4,11 @@ body{
     position: relative;
 }
 
-
+#image{
+    height:50px;
+   float: left;  
+   }
+   
 #nav{
     color:white ;
     background-color: black;
@@ -16,6 +20,7 @@ body{
      border-top: solid 2px white;
      border-bottom: solid 2px white;
      padding:10px;
+     width:1400px;
 }
 
 nav:hover{

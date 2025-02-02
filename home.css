@@ -1,3 +1,8 @@
+#image{
+    height:50px;
+   float: left;  
+   }
+   
 #nav{
     color:white ;
     background-color: black;
@@ -9,9 +14,22 @@
      border-top: solid 2px white;
      border-bottom: solid 2px white;
      padding:10px;
+     width:1400px;
 }
 
 nav:hover{
+    cursor: pointer;
+}
+
+#search{
+    border:pink solid 2px;
+    border-radius: 15px;
+    margin-left: 150px;
+}
+
+#bsearch{
+    background-color: black;
+    border: none;
     cursor: pointer;
 }
 
@@ -42,3 +60,48 @@ nav:hover{
     font-size: 25px;
     color: black;
 }
+
+#ws{
+    text-decoration: none;
+    position: absolute;
+    cursor: pointer;
+    top:5px;
+    right:50px;
+    font-size: 25px;
+    color: black;
+}
+
+#wrapper{
+    justify-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+#slider{
+    width:999px ;
+    height:350px;
+    display:flex;
+    overflow-x: auto;
+    }
+
+#snav{
+    display: flex;
+    column-gap: 20px;
+    position: absolute;
+    top:64%;
+    left: 50%;
+}
+
+#snav a{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fefcfc;
+  opacity: 0.5;
+}
+
+#snav a:hover{
+    opacity: 100%;
+}
+
