@@ -72,17 +72,17 @@ nav:hover{
 }
 
 #wrapper{
-    justify-items: center;
     width: fit-content;
     margin: 0 auto;
+    justify-items: center;
     height: fit-content;
 }
 
 #slider{
-    width:999px ;
+    width:1050px ;
     height:350px;
     display:flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     }
 
 #snav{
@@ -90,7 +90,7 @@ nav:hover{
     column-gap: 20px;
     position: absolute;
     top:64%;
-    left: 50%;
+    left:50%;
 }
 
 #snav a{
@@ -105,3 +105,57 @@ nav:hover{
     opacity: 100%;
 }
 
+#wrapper::after{
+    content:"Coupon";
+    background-color: white;
+    color:rgb(244, 229, 152);
+    border:solid 2px rgb(244, 229, 152);
+    padding:3px;
+    font-size: 20px;
+    position: fixed;
+    top:150px;
+    right:2px;            /*negative values can also be used*/
+}
+
+#ctitle{
+    margin:30px auto;
+    text-align: center;
+    font-size:30px;
+}
+
+#category{
+    display:flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin:0 auto;
+    justify-content: center;
+}
+
+.citem{
+    border: solid rgb(38, 2, 2) 2px;
+    padding:10px;
+    width:fit-content;
+    margin:10px;
+    background-color: rgb(252, 247, 241);
+    box-shadow: 3px 10px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.citem img{
+height: 100px;
+box-shadow: 3px 10px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.citem p{
+    color: brown;
+    font-weight: bolder;
+}
+
+#faq details{
+    border-bottom: 1px solid rgb(19, 19, 16);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#footer{
+    display: flex;
+}
