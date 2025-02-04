@@ -10,11 +10,11 @@
      justify-content: center;
      word-spacing: 100px;
      font-size: 20px; 
-     margin-top: 20px;
+     margin-top: 2%;
      border-top: solid 2px white;
      border-bottom: solid 2px white;
-     padding:10px;
-     width:1400px;
+     padding:1.5%;
+     width:100%;
 }
 
 nav:hover{
@@ -24,7 +24,7 @@ nav:hover{
 #search{
     border:pink solid 2px;
     border-radius: 15px;
-    margin-left: 150px;
+    margin-left: 15%;
 }
 
 #bsearch{
@@ -79,7 +79,8 @@ nav:hover{
 }
 
 #slider{
-    width:1050px ;
+    /* this */
+    width:1050px ;  
     height:350px;
     display:flex;
     overflow-x: hidden;
@@ -94,8 +95,8 @@ nav:hover{
 }
 
 #snav a{
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #fefcfc;
   opacity: 0.5;
@@ -113,12 +114,12 @@ nav:hover{
     padding:3px;
     font-size: 20px;
     position: fixed;
-    top:150px;
-    right:2px;            /*negative values can also be used*/
+    top:30%;
+    right:0.1%;            /*negative values can also be used*/
 }
 
 #ctitle{
-    margin:30px auto;
+    margin:2% auto;
     text-align: center;
     font-size:30px;
 }
@@ -126,7 +127,7 @@ nav:hover{
 #category{
     display:flex;
     flex-wrap: wrap;
-    width: 900px;
+    width:60%;
     margin:0 auto;
     justify-content: center;
 }
@@ -158,4 +159,42 @@ box-shadow: 3px 10px 15px 5px rgba(0, 0, 0, 0.3);
 
 #footer{
     display: flex;
+}
+
+@media only screen and (max-width: 426px) {
+    #nav{
+         word-spacing: 10px;
+         font-size: 13px; 
+         width:425px; 
+    }
+
+    #search{
+        margin-left: 10px;
+    }
+
+    #slider{
+        width:435px ;  
+        height:150px;
+        }
+
+        #snav{
+            display: flex;
+            column-gap: 10px;
+            position: absolute;
+            top:80%;
+            left:50%;
+        }
+
+        #category{
+            width:80%;
+        }
+
+        .citem{
+            height:fit-content;
+            width:fit-content;
+        }
+
+        .citem p{
+            display: none;
+        }
 }
